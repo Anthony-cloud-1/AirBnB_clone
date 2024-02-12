@@ -78,5 +78,4 @@ EOF  all  count  create  destroy  help  quit  show  update\n
     # Test cases for do_destroy
 
 
-if __name__ == "__main__": 
-    unittest.main()
+
