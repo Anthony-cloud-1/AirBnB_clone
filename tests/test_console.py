@@ -8,8 +8,6 @@ from io import StringIO
 
 class Test_Console(unittest.TestCase):
     """Test the HBNBCommand Console"""
-
-
     def test_help(self):
         """Tests the help command."""
         with patch('sys.stdout', new=StringIO()) as f:
@@ -50,7 +48,6 @@ EOF  all  count  create  destroy  help  quit  show  update\n
         info = f"Expected length 1, got{len(msg)}.\nOutput:{msg}"
         self.assertEqual(len(_msg), 1, info)
 
-
     # Test cases for emptyline
     def test_do_emptyline(self):
         """Tests the emptyline command"""
@@ -81,5 +78,5 @@ EOF  all  count  create  destroy  help  quit  show  update\n
     # Test cases for do_destroy
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     unittest.main()
